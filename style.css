@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root {
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+
+}
+* {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--Very-Light-Gray);
+}
+
+.container{
+    text-align: center;
+}
+
+.header{
+    font-weight: normal;
+    color: gray;
+}
+h1{
+    color:hsl(234, 12%, 34%);
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 38px;
+}
+p{
+    color: hsl(229, 6%, 66%);
+    background: none;
+    margin: 0 0 35px 25px;
+}
+h3{
+    background: none;
+    margin: 25px;
+    margin-bottom: 0;
+    color:hsl(234, 12%, 34%);
+}
+.co-container{
+    margin: 10px auto;
+}
+.co-container div{
+    background-color: rgb(255, 255, 255);
+    border-radius: .5em;
+    height: 230px;
+    max-width: 320px;
+    margin: 0 auto;
+    margin-bottom: 25px
+}
+
+.co-container img{
+    float: right;
+    margin: 20px;
+}
+
+.co-container .supervisor{
+    border-top: 4px solid var(--Cyan);
+    box-shadow: -1px 3px 5px 0px rgb(0 0 0 /10%);
+}
+.co-container .Team-Builder{
+    border-top: 4px solid var(--Red);
+    box-shadow: -1px 3px 5px 0px rgb(0 0 0 /10%);
+}
+.co-container .Karma{
+    border-top: 4px solid var(--Orange);
+    box-shadow: -1px 3px 5px 0px rgb(0 0 0 /10%);
+}
+.co-container .Calculator{
+    border-top: 4px solid var(--Blue);
+    box-shadow: -1px 3px 5px 0px rgb(0 0 0 /10%);
+}
+@media only screen and (min-width: 1440px) {
+    .co-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .co-container .supervisor{
+        position: relative;
+        top: 149px;
+        margin-bottom: -220px;
+        right: 350px;
+    }
+    .co-container .Calculator{
+        position: relative;
+        top: -385px;
+        margin-bottom: -220px;
+        right: -350px;
+    }
+}
+
